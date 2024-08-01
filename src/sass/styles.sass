@@ -1,4 +1,5 @@
 $color-1EACC7: #1EACC7
+$color-FF5656: #FF5656
     
 @mixin label
     margin: 0 auto
@@ -25,6 +26,12 @@ $color-1EACC7: #1EACC7
     font-size: 17px
     font-weight: 400
     color: #222222
+
+@mixin btn_hover
+    &:hover
+        background-image: none
+        background-color: $color-1EACC7
+
 
 *
     font-family: 'Roboto', sans-serif
@@ -100,6 +107,7 @@ nav
         border-radius: 4px
         text-transform: uppercase
         border: none
+        @include btn_hover
 
 .promo
     min-height: 800px
@@ -143,6 +151,7 @@ nav
         border-radius: 4px
         text-transform: uppercase
         border: none
+        @include btn_hover
 
 .reasons
     min-height: 850px
@@ -184,7 +193,7 @@ nav
         color: #202020
         font-size: 15px
         font-weight: 300
-        text-align
+        text-align: left
         line-height: 21px
 
 .mobile
@@ -251,11 +260,30 @@ nav
             height: 29px
             border-radius: 100%
             background-color: #000000
-            cursor: pointer  
-
-            img
-                width: 100%
-
+            cursor: pointer
+            
+            &:before
+                content: ''
+                display: block
+                width: 14px
+                height: 2px
+                background-color: $color-1EACC7
+                
+            &:after
+                content: ''
+                display: block
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                width: 2px
+                height: 14px
+                background-color: $color-1EACC7
+            
+            &:hover
+               &:before, &:after
+                    background-color: $color-FF5656
+                    transition: 0.3s all
+                
 .choice 
     position: relative
     min-height: 895px
