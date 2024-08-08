@@ -390,4 +390,133 @@ nav
             li
                 &:before
                     background: url('../images/check/check_red.jpg') center (center / cover) no-repeat
-                
+
+.map
+    min-height: 720px
+    padding: 46px 0 21.5px 0
+    background-color: #080816
+    position: relative
+
+    img
+        position: absolute
+        top: 3px
+        left: 50%
+        transform: translateX(-50%)
+        z-index: 1
+
+    .label
+        @include label
+        position: relative
+        z-index: 2
+
+        &_white
+            color: #000
+            background-color: #fff
+    
+    .title 
+        @include title
+        margin-top: 26px
+        position: relative
+        z-index: 2
+
+        &_white
+            color: #fff
+
+    .subtitle
+        @include subtitle
+        position: relative
+        z-index: 2
+
+        &_white
+            color: #fff
+    
+    .cities_link
+        margin: 0 auto
+        margin-top: 456.5px
+        position: relative
+        z-index: 2
+        width: 223.12px
+        text-align: center
+        a
+            color: #1FBAD6
+            font-size: 15px
+            font-weight: 400
+            text-transform: uppercase
+            text-decoration: none
+            line-height: 68px
+
+            &:hover
+                color: #fff
+                transition: 0.3s all
+
+footer
+    min-height: 156px
+    padding: 14px 23px 39px 23px
+
+.footer
+    &_divider
+        margin: 0 auto
+        width: 301px
+        height: 7px
+        background-color: #1FBAD6
+    
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        padding-top: 32px
+    
+    &_wrapper > div
+        width: 33%
+
+    &_social
+        width: 160px
+        display: flex
+        justify-content: space-between
+
+        &_circle
+            width: 35px
+            height: 35px
+            border-radius: 100%
+            background-color: #070716
+            display: flex
+            justify-content: center
+            align-items: center
+
+
+    &_links
+        width: 390px
+        margin: 0 auto
+
+        &_main
+            display: flex
+            justify-content: space-around
+        
+            a 
+                text-decoration: none
+                text-transform: uppercase
+                color: #070716
+                font-size: 15px
+                font-weight: 300
+        
+        &_sub
+            margin-top: 20px
+            display: flex
+            justify-content: space-around
+
+            a
+                text-decoration: none
+                text-transform: uppercase
+                color: #999999
+                font-size: 11px
+                font-weight: 300
+
+        &_lang
+            text-align: center
+            margin-top: 17px
+            a
+                text-decoration: none
+                text-transform: uppercase
+                color: #1FBAD6
+                font-size: 11px
+                font-weight: 300
