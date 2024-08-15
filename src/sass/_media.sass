@@ -348,9 +348,50 @@
             a
                 line-height: 0
 
-
+    footer
+        min-height: 254px
+        padding: 24px 18px 29px 18px
 
     .footer
         &_divider
             width: 255px
             height: 6px
+
+
+        &_wrapper
+            padding-top: 21px
+
+        &_wrapper > div
+            &:nth-child(1)
+                order: 2
+
+            &:nth-child(2)
+                order: 1
+
+            &:nth-child(3)
+                order: 3
+                margin: 0
+
+        &_links
+            &_main
+                margin: 0
+                justify-content: space-between
+
+                a
+                    font-size: 14px
+
+            &_sub
+                margin-top: 10px
+                flex-wrap: wrap
+                justify-content: space-between
+
+                a
+                    margin: 0 7px
+                    line-height: 23px
+
+            &_lang
+                margin-top: 10px
+
+        &_mobile
+            img
+                margin: 0
